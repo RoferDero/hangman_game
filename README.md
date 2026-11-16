@@ -1,5 +1,6 @@
 # calculator
 help - для справки
+  
         Операторы:  + - * / % ^ !   (скобки, унарный минус)
         
         Функции:    sin cos tan asin acos atan atan2 sinh cosh tanh
