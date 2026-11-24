@@ -96,3 +96,12 @@ public:
         std::cout << "=================================\n\n";
         std::cout << "Введите букву — или '?' (подсказка),\n";
         std::cout << "чтобы увидеть определение слова.\n\n";
+        
+        bool playAgain = true;
+        while (playAgain) {
+            startNewGame();
+            gameLoop();
+            playAgain = askPlayAgain();
+        }
+        std::cout << "\nСпасибо за игру!\n";
+    }
