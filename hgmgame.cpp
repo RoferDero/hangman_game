@@ -58,3 +58,9 @@ namespace {
 
 
 }
+
+// Пара «слово — подсказка (определение)»
+struct WordEntry {
+    std::string word;
+    std::string hint;
+};
