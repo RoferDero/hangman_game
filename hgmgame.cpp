@@ -134,3 +134,11 @@ private:
                 std::cout << "Подсказка: "<< currentHint << "\n";
                 return;
             }
+
+            std::string input = readInput();
+            if (input.empty()) continue;
+
+            if (input == "?" || INPUT == "подсказка" || input == "hint") {
+                std::cout << "\n>>> Подсказка: " << currentHint << "\n\n";
+                continue;
+            }
