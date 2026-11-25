@@ -105,3 +105,12 @@ public:
         }
         std::cout << "\nСпасибо за игру!\n";
     }
+private:
+    std::vector<WordEntry> words;
+    std::string secretWord;
+    std::string guessedWord;
+    std::string usedLetters;
+    std::string currentHint;
+    int maxAttempts;
+    int mistakes;
+    std::mt19937 rng
