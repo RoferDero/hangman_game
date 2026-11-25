@@ -114,3 +114,23 @@ private:
     int maxAttempts;
     int mistakes;
     std::mt19937 rng
+//
+//
+//
+//
+//
+//
+     void gameLoop() {
+        while(true) {
+            drawState();
+            if (isWordGuessed()) {
+                std::cout << "\n*** Победа! Вы угадали слово: " 
+                    << secretWord << "***\n";
+                std::cout << "Подсказка: "<< currentHint << "\n";
+                return;
+            }
+            if (mistakes >= maxAttempts) {
+                std::cout << "\n*** Вы проиграли. Загаданное слово: " << secretWord << "***\n";
+                std::cout << "Подсказка: "<< currentHint << "\n";
+                return;
+            }
